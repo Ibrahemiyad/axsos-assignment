@@ -1,0 +1,23 @@
+#button{
+    width: 300px;
+    height: 40px;
+
+    border-color: #86cccc;
+    border-radius: 50px;
+    color:#86cccc;
+}
+#add{
+    width: 100px;
+    height: 100px;
+    color: azure;
+    background-color: aqua;
+    border-color: aqua;
+    border-radius: 100px;
+}
+#create{
+    width: 300px;
+    height: 40px;
+    background-color: hwb(222 10% 13%);
+    color:azure;
+    border-color: black;
+}
