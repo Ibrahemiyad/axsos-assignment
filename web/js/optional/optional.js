@@ -10,7 +10,7 @@ function number(par1){
     console.log(x);
 }
 number(5);
-
+/*
 function number([par1,par2]){
     console.log(par1);
     return (par2);
@@ -39,3 +39,8 @@ for(i=0;i<=x.length-1; i++){
 
 
 
+   function celsiusToFahrenheit(cDegrees) {
+    console.log("Fahrenheit.      "   +cDegrees * 9/5) + 32;
+}
+celsiusToFahrenheit(1)
+*/
