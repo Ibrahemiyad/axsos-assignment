@@ -1,0 +1,38 @@
+.container{
+    width: 950px;
+    background-color: #dddef4;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+
+.githup{
+    text-align: center;
+}
+.div1{
+    background-color: #68d3b7;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.div{
+    display: flex;
+    background-color: #d99daa;
+    padding: 20px;
+    justify-content:space-around ;
+    margin-top: 15px;
+}
+.div2{
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+}
+.url{
+    text-align: center;
+}
+
+.octocat{
+    height: 200px;
+}
