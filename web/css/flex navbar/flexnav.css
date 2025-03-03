@@ -1,0 +1,43 @@
+.nav {
+    background-color: #333333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-title {
+    color: white;
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links  {
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    padding-right: 10px;
+
+}
+
+a{
+    color: #919191;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.active {
+    color: white;
+
+}
+
+li {
+    color: #cacaca;
+}
+
+.btn {
+    color: white;
+    background-color: #16a2b8;
+    border: black 1px solid;
+    padding: 10px
+}
