@@ -1,0 +1,182 @@
+
+
+.nav {
+    background-color: #333333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav-title {
+    color: white;
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links  {
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    padding-right: 10px;
+    
+
+}
+
+a{
+    color: #919191;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.active {
+    color: white;
+
+}
+
+li {
+    color: #cacaca;
+}
+
+.btn {
+    color: white;
+    background-color: #16a2b8;
+    border: black 1px solid;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    margin: 0px auto;
+    height: 330px;
+    border: 1px solid #cccccccc;
+    font-family:Arial, Helvetica, sans-serif sans-serif;
+
+
+
+}
+
+.back-ground {
+    height: 100px;
+    background-color: #16a2b8;
+}
+
+.user-circle {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+
+    border: solid rgba(255, 255, 255, 0.553) 5px;
+    border-radius: 70px;
+}
+
+.username {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.map {
+    left: 25px;
+    height: 20px;
+    width: 15px;
+    margin-right: 10px;
+}
+.adress{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    top: 57%;
+    
+
+
+}
+.description{
+    position: absolute;
+    left: 30px;
+    top: 60%;
+}
+
+.url{
+    position: absolute;
+        left: 50px;
+        bottom: 10px;
+}
+.gear{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 20px;
+    bottom: 10px;
+    
+}
+.section{
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 330px;
+    width: 500px;
+    border: 1px solid #cccccccc;
+}
+header{
+    color: #d6d6d6;
+    background-color: #333333;
+    padding: 30px;
+}
+h2{
+    margin: 15px;
+}
+p{
+    margin:20px;
+}
+.date{
+    color: #919191;
+}
+.con{
+    position: relative;
+    padding :20px;
+    height: 400px;
+    width: 400px;
+}
+img{
+    padding :5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 70px;
+    align-items: center;
+}
+.todde{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+
+    display: flex;
+    align-items: center;
+    
+}
+.img{
+    position: absolute;
+    right: 40px;
+    top: 110px;
+
+}
+.commection{
+    padding: 10px;
+}
+.philk{
+    padding: 20px;
+    position: absolute;
+    
+}
+.img2{
+    position: absolute;
+    bottom: 220px;
+}
+.img3{
+    
+}
+
