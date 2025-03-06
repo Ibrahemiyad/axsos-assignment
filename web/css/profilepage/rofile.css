@@ -1,6 +1,22 @@
+main {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.land-page{
+    margin: 20px ;
+    width:70%;
 
+}
+
+.right-nav {
+    margin: 20px auto;
+    width: 30%;
+}
 
 .nav {
+    padding: 100px;
     background-color: #333333;
     padding: 15px;
     display: flex;
@@ -10,26 +26,28 @@
 }
 
 .nav-title {
+    margin-left: 100px ;
     color: white;
     list-style: none;
     display: flex;
 
 }
 
-.nav-links  {
+.nav-links {
     list-style: none;
     font-size: 25px;
     display: flex;
     padding-right: 10px;
-    
+
 
 }
 
-a{
+a {
     color: #919191;
     margin-right: 30px;
     text-decoration: none;
 }
+
 .active {
     color: white;
 
@@ -49,7 +67,6 @@ li {
 
 .container {
     position: relative;
-    width: 500px;
     margin: 0px auto;
     height: 330px;
     border: 1px solid #cccccccc;
@@ -70,19 +87,19 @@ li {
     left: 30px;
     width: 70px;
     height: 70px;
-
     border: solid rgba(255, 255, 255, 0.553) 5px;
-    border-radius: 70px;
+    border-radius: 50px;
 }
 
 .username {
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 40px;
 }
 
 .map {
-    left: 25px;
+    position: absolute;
+    left: 30px;
     height: 20px;
     width: 15px;
     margin-right: 10px;
@@ -90,93 +107,240 @@ li {
 .adress{
     position: absolute;
     display: flex;
-    left: 20px;
-    top: 57%;
+    left: 40px;
+    top: 170px;
     
 
 
 }
 .description{
     position: absolute;
-    left: 30px;
+    left: 25px;
     top: 60%;
 }
 
 .url{
     position: absolute;
-        left: 50px;
+        left: 70px;
         bottom: 10px;
 }
 .gear{
     position: absolute;
     height: 20px;
     width: 20px;
-    left: 20px;
-    bottom: 10px;
+    left: 30px;
+    bottom: 1px;
     
 }
-.section{
+
+
+.section {
     margin: 0 auto;
     margin-top: 15px;
     height: 330px;
-    width: 500px;
     border: 1px solid #cccccccc;
 }
-header{
+
+header {
     color: #d6d6d6;
     background-color: #333333;
     padding: 30px;
 }
-h2{
+
+h2 {
     margin: 15px;
 }
-p{
-    margin:20px;
+
+p {
+    margin: 20px;
 }
-.date{
+
+.date {
     color: #919191;
 }
-.con{
+
+.con {
     position: relative;
-    padding :20px;
+    padding: 20px;
     height: 400px;
     width: 400px;
 }
-img{
-    padding :5px;
-    height: 40px;
-    width: 40px;
+
+img {
+    padding: 5px;
+    height: 20px;
     border-radius: 70px;
     align-items: center;
 }
-.todde{
+
+.todde {
     position: absolute;
     left: 100px;
     top: 120px;
 
     display: flex;
     align-items: center;
-    
+
 }
-.img{
+
+.img {
     position: absolute;
     right: 40px;
     top: 110px;
 
 }
-.commection{
+
+.commection {
     padding: 10px;
 }
-.philk{
+
+.philk {
     padding: 20px;
     position: absolute;
-    
+
 }
-.img2{
+
+.img2 {
     position: absolute;
     bottom: 220px;
 }
-.img3{
-    
+
+.div4 {
+    margin-top: 15px;
+    position: relative;
+    height: 430px;
+    width: 300px;
+    border: #928888 2px solid;
+
 }
 
+header {
+    padding: 10px;
+    background-color: #333333;
+}
+
+.text1 {
+    color: aliceblue;
+    margin-left: 70px;
+}
+
+.class3 {
+    position: absolute;
+    top: 33px;
+    left: 29px;
+    background-color: #928888;
+    padding: 1px 5px;
+    border-radius: 100px;
+}
+
+img {
+    display: flex;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.name5 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.name6 {
+    position: absolute;
+    top: 85px;
+    left: 80px;
+}
+
+.name7 {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+.name8 {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+}
+
+.url1 {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border-top: black 2px solid;
+    width: 92%
+}
+
+.div3 {
+    position: relative;
+    height: 250px;
+    width: 300px;
+    border: #928888 2px solid;
+}
+
+header {
+    position: relative;
+    padding: 15px;
+    background-color: #333333;
+}
+
+.text {
+    margin-left: 30px;
+    color: white;
+}
+
+.class2 {
+    padding: 5px 10px;
+    position: absolute;
+    background-color: hsl(0, 0%, 51%);
+    border-radius: 100px;
+    top: 32px;
+    left: 12px;
+}
+
+.image-text {
+    padding: 10px;
+    position: relative;
+}
+
+.img1 {
+    border-radius: 50px;
+    height: 50px;
+}
+
+.img2 {
+    gap: 0px;
+    display: flex;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.name1 {
+    position: absolute;
+    top: 6%;
+    left: 65px;
+}
+
+.img3 {
+    margin-top: 5px;
+    border-radius: 50px;
+    height: 50px;
+}
+
+.img4 {
+    position: absolute;
+    gap: 1px;
+    display: flex;
+    height: 30px;
+    right: 10px;
+    bottom: 50px;
+}
+
+.name2 {
+    position: absolute;
+    bottom: 10%;
+    left: 70px;
+}

@@ -13,11 +13,11 @@ header{
     color: white;
 }
 .class2{
-    padding: 10px;
+    padding: 5px 10px;
     position: absolute;
     background-color: hsl(0, 0%, 51%);
     border-radius: 100px;
-    top: 35px;
+    top: 38px;
     left: 20px;
 }
 .image-text{
