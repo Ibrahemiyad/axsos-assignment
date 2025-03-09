@@ -1,81 +1,53 @@
-.container{
-    padding:0 100px
+
+main{
+    padding: 0 100px;
 }
-.main{
-    display: flex;
-}
-.navbar{
-    padding: 30px;
-    justify-content: space-between;
-    display: flex;
+nav{
     background-color: black;
+}
+nav h1{
+    color: white;
+    padding: 20px;
+}
+.yourfeed{
+    text-align:center ;
+}
+.all-page{
+    display: flex;
+}
+.section5{
+    width: 100%;
+}
 
-}
-h1{
-    color: white;
-}
-.search{
-    border: black 2px solid;
-    width: 300px;
-    height: 40px;
-    justify-content: center;
-    margin: 15px 0;
-}
-.Login{
-    margin: 15px 0;
-    height: 50px;
-    border: black 2px solid;
-    background-color: #2976e8;
-    color: white;
-    
-}
-.land-page{
-    width: 70%;
-}
-    
 .div1{
-    display: flex;
-    border: 2px solid black;
-    padding: 20px 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.likes{
-    background-color: #feda66;
-    border: 2px solid black;
-    padding: 10px;
-}
-.right-nav{
-    margin: 50px 20%;
-    
-}
-.div2{
-    display: flex;
-    border: 2px solid black;
-    padding: 20px 10px;
-}
-
-.likes1{
-    background-color: #feda66;
-    border: 2px solid black;
-    padding: 10px;
-}
-.right-nav2{
-    margin: 50px 20% ;
-    
-}
-section{
-    width: 30%;
-    margin: 20px 0 0 20px;
-    padding: 15px 10px;
-    border: black 2px solid;
-    height: fit-content;
-    
-}
-button{
     padding: 15px;
     border: 2px black solid;
-    background-color: #93c47e;
+    width: fit-content;
+    text-align: center;
+}
+.like3{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
 
+}
+button{
+    width: 50px;
+    background-color: #ffda66;
+    color: black;
+
+}
+.Neil{
+    border: 2px black solid;
+    margin: 0 0 20px 20px;
+    width: 100%;
+
+
+}
+.par1{
+    margin-left: 20px;
+}
+.top{
+    display: flex;
+    gap: 20px;
 }

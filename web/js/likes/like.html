@@ -9,58 +9,70 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
+    <main>
+        <nav>
             <h1>Network</h1>
-        </div>
-        <div class="main">
 
-        <div class="land-page">
-            <div class="div1">
-                <div class="left-nav">
-                    <h1>ninja</h1>
-                    <h3>noun</h3>
-                    <p>Plural: ninjas</p>
-                    <button class="likes" onclick="show(this)"> 13 likes</button>
-                </div>
-                <div class="right-nav">
-                    <p> A practitioner skilled in the</p>
-                    <p> <a href="https://www.google.com/">Jappaness</a>
-                        art of
-                        <a href="https://www.google.com/"> ninjutsu</a>
-                    </p>
-                </div>
-            </div>
-            <div class="div2">
-                <div class="left-nav1">
-                    <h1>ninja</h1>
-                    <h3>noun</h3>
-                    <p>Plural: ninjas</p>
-                    <button class="likes1"> 37 likes</button>
-                </div>
-                <div class="right-nav2">
-                    <p>A
-                        <a href="https://www.google.com/">programmer</a>
-                        who breaks
-                    </p>
-                    <p>down problems with
-                        <a href="https://www.google.com/"> zen</a>
-                        -like
-                    </p>
-                    <p>focus</p>
-                </div>
-            </div>
-        </div>
-    
-        <section>
-            <h2>Dojonary is</h2>
-            <h2>defined by <strong> YOU</strong> </h2>
-            <button onclick="hide(this)"> Add Definition</button>
+        </nav>
+        <h1 class="yourfeed">Your Feed</h1>
+        <section class="all-page">
+            <section>
+                <article class="div1">
+                    <img src="user.png"><br>
+                    <a href="#">Add Avatar</a>
+                    <h2> James Doe </h2>
+                </article>
+            </section>
+            <section class="section5">
+                <article class="Neil">
+                    <div class="like3">
+                        <h1>Neil M</h1>
+                        <div class="top">
+                            <p><span id="likecount1">9  </span>like(s)</p>
+                            <button onclick="add1(0)">like</button>
+                        </div>
+                    </div>
+                    <div class="par1">
+                        <p>I just set uo this new discord bot, let me <br>
+                            know what you all think. <a href="#">link</a>
+
+                        </p>
+                    </div>
+                </article>
+                <article class="Neil">
+                    <div class="like3">
+                        <h1> Nichole K</h1>
+                        <div class="top">
+                            <p><span id="likecount2">12  </span>like(s)</p>
+                            <button  onclick="add2()"> like</button>
+                        </div>
+                    </div>
+                    <div class="par1">
+                        <p>Just finished my <a href="#">next comic</a>, check it out</p>
+                    </div>
+                </article>
+                <article class="Neil">
+                    <div class="like3">
+                        <h1> Jim R</h1>
+                        <div class="top">
+                            <p><span id="likecount3">9  </span>like(s)</p>
+                            <button onclick="add3()">like</button>
+                        </div>
+                    </div>
+                    <div class="par1">
+                        <p>I cant stop listening to the <a href="#"> new alum</a>. <br>
+                            Who else is liking it?
+
+                        </p>
+                    </div>
+                </article>
+                
+            </section>
         </section>
 
-        </div>
-    </div>
-<script src="button clicker .js"></script>
+
+        <script src="like.js"></script>
+    </main>
 </body>
 
 </html>
