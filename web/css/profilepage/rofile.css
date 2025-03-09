@@ -16,7 +16,7 @@ main {
 }
 
 .nav {
-    padding: 100px;
+    /* padding: 100px; */
     background-color: #333333;
     padding: 15px;
     display: flex;
@@ -29,7 +29,7 @@ main {
     margin-left: 100px ;
     color: white;
     list-style: none;
-    display: flex;
+    /* display: flex; */
 
 }
 

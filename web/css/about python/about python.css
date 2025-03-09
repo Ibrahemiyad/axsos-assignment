@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b5b84;
+    color: white;
+    box-shadow: 0 2px 5px black;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b5b84;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 200px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    background-color: #427cad;
+    width: 90%;
+    box-shadow: 0 2px 5px black;
+
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background: hsl(212, 82%, 67%);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.leftnav{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+}
+.left-nav{
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.left-nav li{
+    padding: 4px;
+}
+.intro {
+
+    font-size: 14px;
+    text-align: center;
+    padding: 0 100px;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.zen {
+    font-size: 17px;
+    font-style: italic;
+    color: gold;
+}
+
+.content {
+    padding: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    padding: 20px;
+}
+
+.content h2 {
+    border-top: 5px solid #41739c;
+    padding-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a3b5d;
+}
+.footers{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 100px;
+    text-align: center;
+    list-style: none;
+}
