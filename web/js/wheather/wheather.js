@@ -1,9 +1,12 @@
-function alert1() {
-    alert('Burbank');
+function alert1(el) {
+    alert(el.innerText);
 }
 
 function dismiss() {
     document.querySelector('.article3').style.display = 'none'; // Hide the cookie message
+}
+function alert2(){
+    alert('Loading weather report')
 }
 
 function convertTemperatures() {
