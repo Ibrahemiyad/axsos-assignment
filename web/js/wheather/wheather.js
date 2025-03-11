@@ -7,35 +7,20 @@ function dismiss() {
 }
 
 function convertTemperatures() {
-    var x = document.getElementById('celcius').value;
-    var temps = document.querySelectorAll('.par'); 
-
-    for (var i = 0; i < temps.length; i++) {
-        var par = temps[i]; 
-        var temperature = parseFloat(par.innerText); 
-
-        if (x === 'F') {
-            par.innerText = Math.round((temperature * 9 / 5) + 32) + ' °'; 
-        } else if (unit === 'C') {
-            par.innerText = Math.round((temperature - 32) * 5 / 9) + ' °'; 
-        }
-    }
-}
-
-document.getElementById('celcius').addEventListener('change', convertTemperatures);
-
-function convertTemperatures() {
     var unit = document.getElementById('celcius').value;
-    var temps = document.querySelectorAll('.par2'); 
+    var highTemps = document.querySelectorAll('.par'); // الأحمر (الدرجة العالية)
+    var lowTemps = document.querySelectorAll('.par2'); // الأزرق (الدرجة المنخفضة)
 
-    for (var i = 0; i < temps.length; i++) {
-        var par = temps[i]; 
-        var temperature = parseFloat(par.innerText); 
+    for (var i = 0; i < highTemps.length; i++) {
+        var highTemp = parseFloat(highTemps[i].innerText);
+        var lowTemp = parseFloat(lowTemps[i].innerText);
 
         if (unit === 'F') {
-            par.innerText = Math.round((temperature * 9 / 5) + 32) + ' °'; 
+            highTemps[i].innerText = Math.round((highTemp * (9 / 5)) + 32) + '°';
+            lowTemps[i].innerText = Math.round((lowTemp * (9 / 5)) + 32) + '°';
         } else if (unit === 'C') {
-            par.innerText = Math.round((temperature - 32) * 5 / 9) + ' °'; 
+            highTemps[i].innerText = Math.round((highTemp - 32) * 5 / 9) + '°';
+            lowTemps[i].innerText = Math.round((lowTemp - 32) * 5 / 9) + '°';
         }
     }
 }
