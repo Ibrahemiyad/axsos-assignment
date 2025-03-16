@@ -37,3 +37,4 @@ return pizzaOven(
 
 var randomPizza1 = randomPizza();
 console.log(randomPizza1);
+findIndex
