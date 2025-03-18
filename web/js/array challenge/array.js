@@ -21,7 +21,6 @@ alwaysHungry([4, 1, 5, 7, 2]);
 
 
 
-
 function highPass(arr, cutoff) {
     var filteredArr = [];
     for(var i=0;i<arr.length;i++){

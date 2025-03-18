@@ -4,36 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone Calculator</title>
+    <title>Document</title>
     <link rel="stylesheet" href="cal.css">
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <section class="buttons">
-            <button onclick="clearDisplay()">AC</button>
-            <button onclick="appendOperator('%')">%</button>
-            <button onclick="appendOperator('+/-')">+/-</button>
-            <button onclick="appendOperator('/')">÷</button>
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button onclick="appendOperator('*')">×</button>
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button onclick="appendOperator('-')">−</button>
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
-            <button onclick="appendOperator('+')">+</button>
-            <button onclick="appendNumber('0')" class="wide">0</button>
-            <button onclick="appendOperator('.')">.</button>
-            <button onclick="calculateResult()">=</button>
-        </section>
+    <div id="calculator">
+        <div id="display">0</div>
+        <div class="row">
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="operator" value="/">÷</button>
+        </div>
+        <div class="row">
+            <button class="btn" value="4">4</button>
+            <button class="btn" value="5">5</button>
+            <button class="btn" value="6">6</button>
+            <button class="operator" value="*">×</button>
+        </div>
+        <div class="row">
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="operator" value="-">−</button>
+        </div>
+        <div class="row">
+            <button class="btn" data-value="C" id="clear">C</button>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="operator" value="+">+</button>
+        </div>
+        <div class="row">
+            <button id="equals">=</button>
+        </div>
     </div>
-    <script src="cal.js"></script>
+    <script src="cal1.js"></script>
 </body>
 
 </html>

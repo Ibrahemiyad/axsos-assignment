@@ -5,7 +5,7 @@ function alert1(el) {
 function dismiss() {
     document.querySelector('.article3').style.display = 'none'; // Hide the cookie message
 }
-function alert2(){
+function alert2() {
     alert('Loading weather report')
 }
 
