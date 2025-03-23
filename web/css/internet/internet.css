@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+.img-top {
+    width: 100px;
+}
+
+h1 {
+    color: #4a4a4a;
+}
+
+.word-top {
+    color: #26679f;
+}
+
+nav {
+    background-color: #467ca9;
+    padding: 15px 0 15px 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.land-page {
+    display: flex;
+    padding: 5px;
+}
+
+.left {
+    width: max-content;
+}
+
+.btn-top {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #4582b3;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+
+.btn-left {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ec982b;
+    color: white;
+    font-size: 15px;
+
+}
+
+.left-bottom {
+    width: 60%;
+    height: 18em;
+    background-image: url("ad_background.png");
+    background-size: cover;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.left-bottom h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.left-bottom img {
+    height: 120px;
+    text-align: center;
+}
+
+.left-bottom button {
+    width: 70%;
+    background-color: #1ac5de;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.right {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DNS img {
+    width: 20px;
+
+}
+
+.phone {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+
+.phone img {
+    width: 40px;
+}
+
+.hr1 {
+    width: 80%;
+}
+
+.inter {
+    font-size: 10px;
+    color: #6f7471;
+}
+
+.number {
+    color: #07b9dd;
+}
+
+h2 {
+    color: #3366cc;
+}
+
+a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #3366cc;
+}
+
+.box {
+    gap: 20px;
+    display: flex;
+    background: #ffffff;
+    padding: 15px;
+    border: 5px solid #008cba;
+    border-bottom: none;
+    margin-top: 20px;
+}
+
+div img {
+    width: 100px;
+}
+
+.img-middle {
+    text-align: center;
+}
+
+.img-middle img {
+    width: 50%;
+}
+
+.order-list {
+    padding: 0 40px;
+}

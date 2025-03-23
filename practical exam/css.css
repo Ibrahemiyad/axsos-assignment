@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url(yoga-header.jpg);
+    padding: 0 50px;
+    height: 1000px;
+    position: relative;
+}
+
+div {
+    border: 10px;
+}
+
+header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>img {
+    height: 80px;
+    padding: 10px 0 0 30px;
+}
+
+.header-left {
+    color: white;
+    list-style: none;
+
+}
+
+.header-left ul {
+    list-style: none;
+    text-decoration: underline;
+    display: flex;
+    gap: 10px;
+    padding: 10px 30px 0 0;
+    margin-top: 10px;
+}
+
+.search {
+    margin-top: 15px;
+    position: relative;
+}
+
+#searchButton {
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.sound {
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+
+}
+
+.search input {
+    width: 80%;
+    padding: 5px 0 5px 25px;
+    border: 2px black solid;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: white;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav button {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0554c;
+    border: 2px black solid;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    text-align: center;
+    background-color: #ededed;
+    padding: 50px;
+}
+
+.yoga-photo1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.yoga-photo1 img {
+    border-radius: 50%;
+    width: 30%;
+}
+
+
+footer {
+    background-color: #d04205;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-footer img {
+    width: 20px;
+}
+
+a {
+    color: #958088;
+}
