@@ -16,7 +16,8 @@ for i in range(1,101,1):
 
 sum=0
 for number in range(1,500000,1):
-    sum+=number
+    if number % 2==1:
+        sum+=number
 print(sum)
 
 
@@ -30,3 +31,6 @@ mult=3
 for number in range(lowNum, highNum + 1):
     if number % mult == 0:
         print(number)
+
+
+        
