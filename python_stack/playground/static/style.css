@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    background-color: rgb(132, 162, 192); 
+}
