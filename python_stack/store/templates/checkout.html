@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Fruit Store Check Out</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Thank you for your order!</h1>
+    <p>We ordered {{ total_items }} items for you and charged your student account on {{ time }}.</p>
+    <h2>You've ordered:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fruit Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fruit, quantity in quantities.items() %}
+            <tr>
+                <td>{{ fruit }}</td>
+                <td>{{ quantity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Your Information</h2>
+    <p>Name: {{ name }}</p>
+    <p>Your Student ID: {{ student_id }}</p>
+</body>
+</html>

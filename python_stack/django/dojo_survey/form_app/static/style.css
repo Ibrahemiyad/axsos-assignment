@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+
+}
+
+.form{
+border: 1px solid black;
+width: 70vh;
+height:35vh;
+margin: 20% auto;
+padding: 20px 50px;
+position: relative;
+
+}
+
+.div1{
+    display: flex;
+    gap: 20%;
+    margin-bottom: 10px;
+
+}
+.div2{
+    display: flex;
+    gap: 11%;
+    margin-bottom: 10px;
+}
+
+.div3{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 10px;
+}
+
+.div4{
+    position: relative;
+    padding:20px 50px;    
+    border: 1px solid black;
+    width: 40vh;
+    height: 40vh;
+    margin: 10% auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+h1{
+    text-decoration: underline;
+}
+p{
+    padding: 0 20px;
+}
+
+select {
+    display: flex;
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input{
+    display: flex;
+    width: 280px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+textarea{
+    margin-top: 10px;
+    width: 53vh;
+    height: 10vh;
+}
+
+button {
+
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 27%;
+    bottom: 10px;
+}
+
+button:hover {
+    background-color: #00b34e;
+}

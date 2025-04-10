@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+</head>
+<body>
+    <h1>Welcome to the Greate Number Game!</h1>
+
+    <h3>I'm thinking of a number between 1 and 100</h3>
+    <h2>Take guess</h2>
+
+    {% if request.session.message %}
+    {% if request.session.message == "Too low!" or request.session.message == "Too high!"%} 
+        <div class="message red">{{ request.session.message }}</div>
+        {%endif%}
+        {% if "Correct" in request.session.message %}
+            <form action="reset" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Play Again">
+            </form>
+        {% endif %}
+    {% else %}
+        <div class="message">Make a guess!</div>
+    {% endif %}
+
+    <form action="guess" method="post">
+        {% csrf_token %}
+        <input type="number" name="guess" min="1" max="100" required>
+        <input type="submit" value="Guess">
+    </form>
+</body>
+</html>

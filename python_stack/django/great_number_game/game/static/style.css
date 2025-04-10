@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+form {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+label,
+input,
+button {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+input,
+button {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 50px;
+    color: white;
+    font-size: 15px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

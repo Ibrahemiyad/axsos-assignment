@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold Game</title>
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+
+</head>
+<body>
+    <h1>Ninja Gold Game</h1>
+    <h2>Your Gold: {{ gold }}</h2>
+    <form action='Gold' method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="location" value="farm" />
+        <button type="submit">Find Gold from Farm</button>
+    </form>
+    <form action='Gold' method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="location" value="cave" />
+        <button type="submit">Find Gold from Cave</button>
+    </form>
+    <form action='Gold' method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="location" value="house" />
+        <button type="submit">Find Gold from House</button>
+    </form>
+    <form action='Gold' method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="location" value="quest" />
+        <button type="submit">Find Gold from Quest</button>
+    </form>
+
+    <h3>Activities:</h3>
+    <div>
+        {% for activity in activities %}
+            <p>{{ activity }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
