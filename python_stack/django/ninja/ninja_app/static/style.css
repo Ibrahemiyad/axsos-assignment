@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 20px;
+    padding:100px;
 }
 
 h1 {
@@ -31,18 +30,15 @@ h1 {
 }
 
 button {
-    background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
+    color: black;
+
 }
 
-button:hover {
-    background-color: #45a049;
-}
 
 #activities {
     margin-top: 30px;
@@ -54,10 +50,33 @@ button:hover {
     margin: 5px 0;
 }
 
-.activity.success {
-    color: green;
+
+.div{
+    border: 2px solid black;
+    text-align: center;
+    padding: 30px;
+    margin: 1% 2% 2% 2%;
+}
+.div2{
+    display: flex;
+    justify-content: center;
 }
 
-.activity.failure {
+.red{
     color: red;
+}
+
+.green{
+    color: green;
+}
+.activities{
+    border: 1px solid black;    
+    width: 150vh;
+    height: 30vh;
+    overflow: scroll;
+    padding: 5px 0 5px 10px;
+
+}
+.reset{
+    margin: 10px auto;
 }

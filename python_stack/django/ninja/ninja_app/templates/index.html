@@ -11,32 +11,58 @@
 <body>
     <h1>Ninja Gold Game</h1>
     <h2>Your Gold: {{ gold }}</h2>
-    <form action='Gold' method="POST">
+    <div class='div2'>
+        <div class="div">
+            <h1> Farm </h1>
+            <h3> (earns 10-20 gold) </h3> 
+            <form action='Gold' method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="farm"/>
+                <button type="submit">Find Gold</button>
+            </form>
+        </div>
+        <div class="div">
+            <h1> Cave </h1>
+            <h3> (earns 10-20 gold) </h3> 
+            <form action='Gold' method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="cave" />
+                <button type="submit">Find Gold</button>
+            </form>
+        </div>
+        <div class="div">
+            <h1> House </h1>
+            <h3> (earns 10-20 gold) </h3> 
+            <form action='Gold' method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="house" />
+                <button type="submit">Find Gold</button>
+            </form>
+        </div>
+        <div class="div">
+            <h1> Quest </h1>
+            <h3> (earns 10-20 gold) </h3> 
+
+            <form action='Gold' method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="quest" />
+                <button type="submit">Find Gold</button>
+            </form>
+        </div>
+    </div>
+    <form action='delete' method="POST">
         {% csrf_token %}
-        <input type="hidden" name="location" value="farm" />
-        <button type="submit">Find Gold from Farm</button>
-    </form>
-    <form action='Gold' method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="location" value="cave" />
-        <button type="submit">Find Gold from Cave</button>
-    </form>
-    <form action='Gold' method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="location" value="house" />
-        <button type="submit">Find Gold from House</button>
-    </form>
-    <form action='Gold' method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="location" value="quest" />
-        <button type="submit">Find Gold from Quest</button>
+        <button type="submit"class="reset">Reset</button>
     </form>
 
     <h3>Activities:</h3>
-    <div>
+        <div class="activities">
         {% for activity in activities %}
-            <p>{{ activity }}</p>
+            <p class="{% if activity.earned %}green{% else %}red{% endif %}">
+                {{ activity.message }}
+            </p>
         {% endfor %}
-    </div>
+        </div>
+
 </body>
 </html>
