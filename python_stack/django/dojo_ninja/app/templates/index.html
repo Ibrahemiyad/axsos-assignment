@@ -7,36 +7,38 @@
 </head>
 <body>
     <h2>Add a Dojo</h2>
-    <form action="'add_dojo'" method="POST">
+    <form action="add_dojo" method="POST">
         {% csrf_token %}
-        <input type="text" name="name" placeholder="Dojo Name" required>
+        <input type="text" class="form-control" name="name" placeholder="name" required>
+        <input type="text" class="form-control" name="city" placeholder="city" required>
+        <input type="text" class="form-control" name="state" placeholder="state" required>
+
         <button type="submit">Add Dojo</button>
     </form>
+
+
+    <h2>Add a Ninja</h2>
+    <form action='add_ninja' method="POST">
+        {% csrf_token %}
+        <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+        <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+        <select name="dojo_id" class="form-select form-select-lg mb-3">
+            <option value="">Select Dojo...</option>
+            {% for dojo in dojos %}
+                <option value="{{ dojo.id }}">{{ dojo.name }}</option>
+            {% endfor %}
+            </select>
+        <button type="submit">Add </button>
+        </form>
 
     <h2>Dojos List</h2>
     <ul>
         {% for dojo in dojos %}
             <li>
-                {{ dojo.name }} - 
-                Ninjas at {{ dojo.name }} - {{ dojo.ninjas.count }} 
-                <form action="{% url 'delete_dojo' dojo.id %}" method="POST" style="display:inline;">
-                    {% csrf_token %}
-                    <button type="submit">Delete</button>
-                </form>
+                {{ dojo.name }} | {{ dojo.city}} | {{ dojo.state }}
             </li>
         {% endfor %}
     </ul>
 
-    <h2>Add a Ninja</h2>
-    <form action='add_ninja' method="POST">
-        {% csrf_token %}
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="text" name="last_name" placeholder="Last Name" required>
-        <select name="dojo_id">
-            <option value="">Select Dojo...</option>
-            {% for dojo in dojos %}
-                <option value="{{ dojo.id }}">{{ dojo.name }}</option>
-
-    
 </body>
 </html>
