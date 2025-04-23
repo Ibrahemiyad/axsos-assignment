@@ -7,9 +7,13 @@
     <h1>Edit {{ show.title }}</h1>
     <form action="/shows/{{ show.id }}/update" method="POST">
         {% csrf_token %}
-        Title: <input type="text" name="title" value="{{ show.title }}"><br>
-        Network: <input type="text" name="network" value="{{ show.network }}"><br>
-        Release Date: <input type="date" name="release_date" value="{{ show.release_date }}" required>        <br>
+        Title: <input type="text" name="title" value="{{ show.title }}">
+        {% if errors.title %} <p style="color:red">{{ errors.title }}</p> {% endif %}
+
+        Network: <input type="text" name="network" value="{{ show.network }}">
+        {% if errors.network %} <p style="color:red">{{ errors.network }}</p> {% endif %}
+        Release Date: <input type="date" name="release_date" value="{{ show.release_date }}" required>
+        {% if errors.release_date %} <p style="color:red">{{ errors.release_date }}</p> {% endif %}
         Description: <textarea name="description">{{ show.description }}</textarea><br>
         <button type="submit">Update Show</button>
     </form>
