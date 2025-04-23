@@ -35,9 +35,14 @@
     <ul>
         {% for dojo in dojos %}
             <li>
-                {{ dojo.name }} | {{ dojo.city}} | {{ dojo.state }}
+                {{ dojo.name }} | {{ dojo.city}} | {{ dojo.state }} 
             </li>
+            {% for ninja in dojo.ninjas.all %}
+            <li>{{ ninja.first_name }}</li>
         {% endfor %}
+        {% endfor %}
+
+        
     </ul>
 
 </body>

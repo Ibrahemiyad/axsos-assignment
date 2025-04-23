@@ -44,22 +44,19 @@ def authors_page(request):
 
 
 def books_detail(request ,id):
-     context={
-          
+    context={  
         'book' :models.get_book_by_id(id),
         'authors':models.get_author()
 
-
-     }
-     return render(request,'books_details.html',context)
+}
+    return render(request,'books_details.html',context)
 
 def author_detail(request ,id):
-     context={
-          
+    context={      
         'author' :models.get_author_by_id(id),
         'books':models.get_book()
 
 
      }
-     return render(request,'author_detail.html',context)
+    return render(request,'author_detail.html',context)
 

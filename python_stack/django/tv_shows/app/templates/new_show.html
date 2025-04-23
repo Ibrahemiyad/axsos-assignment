@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add New Show</title>
+</head>
+<body>
+    <h1>Add a New Show</h1>
+    <form action="/shows/create" method="POST">
+        {% csrf_token %}
+        Title: <input type="text" name="title"><br>
+        Network: <input type="text" name="network"><br>
+        Release Date: <input type="date" name="release_date"><br>
+        Description: <textarea name="description"></textarea><br>
+        <button type="submit">Create Show</button>
+    </form>
+    <a href="/shows">Back to All Shows</a>
+</body>
+</html>
