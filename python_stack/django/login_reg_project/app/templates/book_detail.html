@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-light bg-white shadow-sm p-3 mb-4">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">Favorite Books</span>
+        <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>{{ book.title }}</h2>
+    <p>{{ book.description }}</p>
+    <p class="text-muted small">Uploaded by {{ book.uploaded_by.first_name }}</p>
+
+    <hr>
+
+    {% if user.id == book.uploaded_by.id %}
+        <a href="{% url 'edit_book' book.id %}" class="btn btn-warning">Edit</a>
+        <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete</a>
+    {% endif %}
+
+    {% if user in book.users_who_like.all %}
+        <a href="{% url 'unfavorite_book' book.id %}" class="btn btn-secondary">Unfavorite</a>
+    {% else %}
+        <a href="{% url 'favorite_book' book.id %}" class="btn btn-primary">Favorite</a>
+    {% endif %}
+
+    <hr>
+
+    <h5>Users who like this book:</h5>
+    <ul>
+        {% for liker in book.users_who_like.all %}
+            <li>{{ liker.first_name }}</li>
+        {% empty %}
+            <li>No one has liked this yet.</li>
+        {% endfor %}
+    </ul>
+
+</div>
+</body>
+</html>
