@@ -1,15 +1,17 @@
 package coffee;
-
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Order {
     private String name;
-    private ArrayList<Item> items;
+    private List<Item> items;
 
     public Order(String name) {
         this.name = name;
         this.items = new ArrayList<Item>();
     }
+
 
     public void addItem(Item item) {
         items.add(item);
@@ -31,4 +33,5 @@ public class Order {
         details.append("Total: $").append(String.format("%.2f", total));
         return details.toString();
     }
+
 }
