@@ -9,10 +9,15 @@ public class Item {
         this.name = name;
         this.price = price;
     }
+    public Item() {
+        this.name = "";
+        this.price = 0.0;
+    }
 
     public String getName() {
         return name;
     }
+
 
     public void setName(String name) {
         this.name = name;
