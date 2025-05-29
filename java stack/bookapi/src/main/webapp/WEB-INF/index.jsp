@@ -1,23 +1,23 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Details</title>
-</head>
-<body>
-    <h1>Book Details</h1>
-    <c:choose>
-        <c:when test="${not empty book}">
-            <h2><strong>${book.title}</strong></h2>
-            <p>Description: ${book.description}</p>
-            <p>Language: ${book.language}</p>
-            <p>Number of Pages: ${book.pages}</p>
-        </c:when>
-        <c:otherwise>
-            <p>No book details available.</p>
-        </c:otherwise>
-    </c:choose>
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<h1>All Books</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Language</th>
+            <th>Number of Pages</th>
+        </tr>
+    </thead>
+    <tbody>
+         <c:forEach var="book" items="${books}">
+             <tr>
+                 <td>${book.id}</td>
+                 <td><a href="/details/${book.id}">${book.title}</a></td>
+                 <td>${book.language}</td>
+                 <td>${book.pages}</td>
+             </tr>
+         </c:forEach>
+    </tbody>
+</table>

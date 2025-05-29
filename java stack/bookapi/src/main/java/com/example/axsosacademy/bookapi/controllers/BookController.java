@@ -9,16 +9,23 @@ import com.example.axsosacademy.bookapi.models.Book;
 import com.example.axsosacademy.bookapi.services.BookService;
 
 import org.springframework.ui.Model;
+import java.util.List;
 
 @Controller
-@RequestMapping("/books")
 public class BookController {
     private final BookService bookService;
 
     public BookController(BookService bookService) {
         this.bookService = bookService;
     }
-    @GetMapping("/{id}")
+    @GetMapping("/")
+    public String index(Model model) {
+        List<Book> books = bookService.allBooks();
+        model.addAttribute("books", books);
+        return "index";
+    }
+
+    @GetMapping("/details/{id}")
     public String showBook(@PathVariable("id") Long id, Model model) {
         System.out.println("Fetching book with ID: " + id); // Debug log
     
@@ -29,6 +36,8 @@ public class BookController {
             return "error"; // Return error view if book not found
         }
         model.addAttribute("book", book);
-        return "index"; // Return a specific view for showing the book
-    }}
+        return "details"; // Return a specific view for showing the book
+    }
+    
+}
 

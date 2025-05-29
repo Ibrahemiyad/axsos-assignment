@@ -49,14 +49,7 @@ public class Book {
     }
     
     // other getters and setters removed for brevity
-    @PrePersist
-    protected void onCreate(){
-        this.createdAt = new Date();
-    }
-    @PreUpdate
-    protected void onUpdate(){
-        this.updatedAt = new Date();
-    }
+   
 	public Long getId() {
 		return id;
 	}
@@ -95,7 +88,14 @@ public class Book {
         this.numberOfPages = pages;
     }
 
-	
+    @PrePersist
+    protected void onCreate(){
+        this.createdAt = new Date();
+    }
+    @PreUpdate
+    protected void onUpdate(){
+        this.updatedAt = new Date();
+    }
     
     
 }
