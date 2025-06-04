@@ -1,0 +1,14 @@
+<script>start("/Users/id/Downloads/1686760277__BuggyLookifyCode/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow(".git",".git",1,384,"384 B",1748861268,"6/2/25, 1:47:48 PM");</script>
+<script>addRow(".mvn",".mvn",1,96,"96 B",1748861268,"6/2/25, 1:47:48 PM");</script>
+<script>addRow(".settings",".settings",1,416,"416 B",1748861268,"6/2/25, 1:47:48 PM");</script>
+<script>addRow("src","src",1,128,"128 B",1748861268,"6/2/25, 1:47:48 PM");</script>
+<script>addRow("target","target",1,224,"224 B",1748861268,"6/2/25, 1:47:48 PM");</script>
+<script>addRow(".classpath",".classpath",0,2300,"2.2 kB",1748862000,"6/2/25, 2:00:00 PM");</script>
+<script>addRow(".gitignore",".gitignore",0,415,"415 B",1686663144,"6/13/23, 4:32:24 PM");</script>
+<script>addRow(".project",".project",0,1559,"1.5 kB",1748861569,"6/2/25, 1:52:49 PM");</script>
+<script>addRow("HELP.md","HELP.md",0,1286,"1.3 kB",1645083344,"2/17/22, 9:35:44 AM");</script>
+<script>addRow("mvnw","mvnw",0,10284,"10.0 kB",1645083344,"2/17/22, 9:35:44 AM");</script>
+<script>addRow("mvnw.cmd","mvnw.cmd",0,6734,"6.6 kB",1645083344,"2/17/22, 9:35:44 AM");</script>
+<script>addRow("pom.xml","pom.xml",0,2749,"2.7 kB",1686663292,"6/13/23, 4:34:52 PM");</script>
