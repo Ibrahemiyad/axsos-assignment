@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 50%;
+    margin: 100px auto 0;
+
+}
+.your-gold{
+    font-size: large;
+    font-weight: bold;
+}
+.your-gold input{
+    font-size: large;
+    font-weight: bold;
+    width: 10%;
+    border: 3px solid black;
+}
+.forms{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.form-box{
+    border: solid 3px black;
+    width: 150px;
+    height: 180px;
+    text-align: center;
+    padding: 15px 0 0 0 ;
+    font-size: large;
+    font-weight: bold;
+
+}
+form p{
+    margin: 20px;
+}
+form input{
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+}
+section{
+    font-size: large;
+    font-weight: bold;
+}
+#activities{
+    border: solid 3px black;
+    width: 100%;
+    margin: 25px 0 0 0;
+    height: 150px;
+    overflow:scroll;
+}
+.msg{
+    color: green;
+}
