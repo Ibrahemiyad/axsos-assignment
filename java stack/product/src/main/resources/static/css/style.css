@@ -1,0 +1,45 @@
+/*
+CSS File
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh;
+}
+
+.home-navbar {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-table {
+    width: 90%;
+}
+
+.home-navbar a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+}

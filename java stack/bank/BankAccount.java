@@ -72,5 +72,6 @@ public class BankAccount {
     public void getBalance() {
         double totalBalance = checkingBalance + savingsBalance;
         System.out.println("Total Balance (Checking + Savings): $" + totalBalance);
-    }
+    
+}
 }
